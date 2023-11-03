@@ -1,0 +1,31 @@
+---
+import '../layouts/MainLayout.astro'
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title={'Om Kumar Kaushik'}>
+	
+	<div class="w-8/12 md:w-6/12 mx-auto">
+		<h1 class="text-5xl md:text-6xl text-center drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)]">Hey! 👋,<br>I'm Om Kumar Kaushik</h1>
+	</div>
+
+	<div id="typed-strings">
+        <p> I am a student at <strong>King Mongkut’s University of Technology Thonburi (KMUTT)</strong></p>
+        <p> This portfolio website was mainly created using <strong>Astro Framework</strong></p>
+    </div>
+
+    <div class="text-center mt-6">
+        <span id="typed"></span>
+    </div>
+
+</MainLayout>
+
+<script>
+	import Typed from "typed.js";
+
+var typed = new Typed("#typed", {
+	stringsElement: "#typed-strings",
+	typeSpeed: 50,
+	loop: true,
+})
+</script>

@@ -1,0 +1,22 @@
+---
+import MainHead from "./MainHead.astro";
+import Nav from "../components/NavBar.astro"
+import '../styles/main.css'
+import Footer from "../components/Footer.astro"
+const {title} = Astro.props
+---
+
+<html lang="en">
+	<MainHead title={"Om Kumar Kaushik"} />
+	<body class="bg-zinc-900 text-slate-50 grid gap-0">
+        <Nav/>
+		    <slot />
+            <Footer />
+            <style>
+                MainLayout {
+                    font-family: "Carlito", san-serif;
+                    min-height: 100vh;
+                }
+            </style>
+	</body>
+</html>
